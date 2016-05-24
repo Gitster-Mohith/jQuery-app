@@ -1,0 +1,32 @@
+<html>
+
+	<head>
+		<title>jQuery</title>
+		<style type="text/css">
+			#text {
+				display: normal;
+			}
+		</style>
+		<script src="jquery.min.js"></script>
+	</head>
+	
+	<body>
+		
+		<p id = "text" >This is toggle text</p>
+		<button id = "toggle" >Toggle Text</button>
+		<script type="text/javascript">
+			
+			if($("#text").css("display") == "none"){
+			$("#toggle").click(function() {
+				$("#text").fadeIn();
+			});
+			} else {
+				$("#toggle").click(function() {
+				$("#text").fadeOut();
+			});
+			}
+		</script>
+	
+	</body>
+
+</html>
